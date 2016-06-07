@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PicturePuzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKy-4X-XB0">
+                                <rect key="frame" x="68" y="260" width="240" height="240"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="H2N-VE-hBx"/>
+                                    <constraint firstAttribute="width" constant="240" id="mXB-bf-o2c"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nature-2" translatesAutoresizingMaskIntoConstraints="NO" id="Vi8-bf-T7W">
+                                <rect key="frame" x="128" y="110" width="100" height="100"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="TFF-Jo-bam"/>
+                                    <constraint firstAttribute="width" constant="100" id="sFz-Jf-Lbu"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RKy-4X-XB0" firstAttribute="top" secondItem="Vi8-bf-T7W" secondAttribute="bottom" constant="50" id="AHq-sA-Nh3"/>
+                            <constraint firstItem="Vi8-bf-T7W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-9.5" id="Dsk-fV-dDz"/>
+                            <constraint firstItem="RKy-4X-XB0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a5p-r5-QIA"/>
+                            <constraint firstItem="RKy-4X-XB0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="46.5" id="dNm-3t-W2A"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imagesContainerView" destination="RKy-4X-XB0" id="2ZC-xc-fEB"/>
+                        <outlet property="originalImageView" destination="Vi8-bf-T7W" id="8fo-u3-cZt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="279.5" y="305.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nature-2" width="1024" height="678"/>
+    </resources>
+</document>
